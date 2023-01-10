@@ -11,6 +11,7 @@ def double_check(nums):
     for num in nums:
         if num * 2 in nums:
             print(True)
+            
 
 if __name__ == "__main__":
     double_check([4, 3, 9, 8])
