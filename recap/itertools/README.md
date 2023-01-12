@@ -1,13 +1,18 @@
 
 # ITERTOOLS
-itertools is a module in the Python standard library that provides a variety of functions for working with iterators. These functions can be used to perform operations such as filtering, mapping, and reducing over the elements of an iterable. Some of the most commonly used functions in the itertools module include:
+`itertools` is a module in the Python standard library that provides a variety of functions for working with iterators. These functions can be used to perform operations such as `filtering`, `mapping`, and `reducing `over the elements of an iterable. Some of the most commonly used functions in the itertools module include:
 
-accumulate(iterable, func=operator.add): returns an iterator that applies the given function to the items of an input iterable, so that the cumulative sum is computed.
-chain(*iterables): returns an iterator that concatenates the elements of the input iterables.
-groupby(iterable, keyfunc): groups the elements of an iterable based on the result of the keyfunc function.
-permutations(iterable, r=None): returns an iterator that generates all possible r-length permutations of the elements in the input iterable.
-product(*iterables, repeat=1): returns an iterator that generates the Cartesian product of the input iterables.
-These are just a few examples of the many functions provided by the itertools module. For more information and examples, you can refer to the official Python documentation: https://docs.python.org/3/library/itertools.html
+`accumulate(iterable, func=operator.add): returns an iterator` that applies the given function to the items of an input iterable, so that the cumulative sum is computed.
+
+`chain(*iterables): returns an iterator` that concatenates the elements of the input iterables.
+
+`groupby(iterable, keyfunc): groups the elements `of an iterable based on the result of the keyfunc function.
+
+`permutations(iterable, r=None): returns an iterator` that generates all possible r-length permutations of the elements in the input iterable.
+
+`product(*iterables, repeat=1): returns an iterator` that generates the Cartesian product of the input iterables.
+
+These are just a few examples of the many functions provided by the itertools module. For more information and examples, you can refer to the official Python documentation: `https://docs.python.org/3/library/itertools.html`
 
 
 ### Accumulate 
