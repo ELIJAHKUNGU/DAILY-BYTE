@@ -21,6 +21,9 @@ You can also use the built-in `itertools.accumulate() `function which returns an
 ```
 def runningSum(nums):
     return [sum(nums[:i+1]) for i in range(len(nums))]
+    
+# Input: nums = [1,2,3,4]
+# Output: [1,3,6,10]
 ```
 
 
