@@ -114,9 +114,52 @@ Preorder Traversal (current-left-right: It means that the root node is traversed
 Inorder Traversal (left-current-right): . Here, the traversal is left child – root – right child.  It means that the left child is traversed first then its root node and finally the right child.
 Postorder Traversal (left-right-current):  Here, the traversal is left child – right child – root.  It means that the left child has traversed first then the right child and finally its root node
 
-<img src="" alt="loading">
+<img src="https://github.com/ELIJAHKUNGU/DAILY-BYTE/blob/facebook/Datastructure/Trees/level.png" alt="loading">
 
 Pre-order Traversal of the above tree: 1-2-4-5-3-6-7 Root-Left-Right
+
 In-order Traversal of the above tree: 4-2-5-1-6-3-7 Left - Root - Right
+
 Post-order Traversal of the above tree: 4-5-2-6-7-3-1 Left - Right- Node 
+
 Level-order Traversal of the above tree: 1-2-3-4-5-6-7 Root -left- right - left -right
+
+### Tree Traversal using Breadth-First Search (BFS) algorithm can be further classified into one category:
+Level Order Traversal:It means that the most left child has traversed first and then the other children of the same level from left to right have traversed. 
+```
+class Node:
+    def __init__(self, key):
+        self.left = None
+        self.right = None
+        self.val = key
+
+
+if __name__ == "__main__":
+    # Create root
+    root = Node(1)
+    ''' following is the tree after above statement
+    1
+    / \
+    None None'''
+    root.left = Node(2)
+    root.right = Node(3)
+ 
+    ''' 2 and 3 become left and right children of 1
+    1
+    / \
+    2 3
+    / \ / \
+    None None None None'''
+    
+    root.left.left = Node(4)
+    '''4 becomes left child of 2
+    1
+    / \
+    2 3
+    / \ / \
+    4 None None None
+    / \
+    None None'''
+        
+```
+
