@@ -32,3 +32,89 @@ Traversing in a tree is done by depth first search and breadth first search algo
 1. It has no loop and no circuit
 2. It has no self-loop 
 3. Its hierarchical model.
+
+## Types of Tree data structures
+The different types of tree data structures are as follows:
+
+1. General tree
+
+A general tree data structure has no restriction on the number of nodes. It means that a parent node can have any number of child nodes.  
+
+2. Binary tree  
+
+A node of a binary tree can have a maximum of two child nodes. In the given tree diagram, node B, D, and F are left children, while E, C, and G are the right children.  
+
+3. Balanced tree
+
+If the height of the left sub-tree and the right sub-tree is equal or differs at most by 1, the tree is known as a balanced tree.
+
+4. Binary search tree
+
+As the name implies, binary search trees are used for various searching and sorting algorithms. The examples include AVL tree and red-black tree. It is a non-linear data structure. It shows that the value of the left node is less than its parent, while the value of the right node is greater than its parent.
+
+Applications of Tree data structure:
+The applications of tree data structures are as follows:
+
+1. Spanning trees: It is the shortest path tree used in the routers to direct the packets to the destination.  
+
+2. Binary Search Tree: It is a type of tree data structure that helps in maintaining a sorted stream of data.  
+
+Full Binary tree
+Complete Binary tree
+Skewed Binary tree
+Strictly Binary tree
+Extended Binary tree
+3. Storing hierarchical data: Tree data structures are used to store the hierarchical data, which means data is arranged in the form of order.  
+
+4. Syntax tree: The syntax tree represents the structure of the program’s source code, which is used in compilers.  
+
+5. Trie: It is a fast and efficient way for dynamic spell checking. It is also used for locating specific keys from within a set.  
+
+6. Heap: It is also a tree data structure that can be represented in a form of an array. It is used to implement priority queues.  
+
+
+
+### Why to use Tree Data Structure? 
+1. One reason to use trees might be because you want to store information that naturally forms a hierarchy.
+2. Trees (with some ordering e.g., BST) provide moderate access/search (quicker than Linked List and slower than arrays). 
+3. Trees provide moderate insertion/deletion (quicker than Arrays and slower than Unordered Linked Lists). 
+4. Like Linked Lists and unlike Arrays, Trees don’t have an upper limit on the number of nodes as nodes are linked using pointers.
+
+# Binary Trees
+#### What is a Binary Tree?
+A binary tree is a tree data structure composed of nodes, each of which has at most, two children, referred to as left and right nodes and the tree begins from root node.
+
+```
+# A Python class that represents
+# an individual node in a Binary Tree
+
+class Node:
+	def __init__(self, key):
+		self.left = None
+		self.right = None
+		self.val = key
+
+```
+### Basic Operations On Binary Tree:
+1. Inserting an element.
+2. Removing an element.
+3. Searching for an element.
+4. Deletion for an element.
+5. Traversing an element. There are four (mainly three) types of traversals in a binary tree which will be discussed ahead.
+
+### Tree Traversal algorithms can be classified broadly into two categories:
+
+1. Depth-First Search (DFS) Algorithms
+2. Breadth-First Search (BFS) Algorithms
+#### Tree Traversal using Depth-First Search (DFS) algorithm can be further classified into three categories:
+
+Preorder Traversal (current-left-right: It means that the root node is traversed first then its left child and finally the right child.
+Inorder Traversal (left-current-right): . Here, the traversal is left child – root – right child.  It means that the left child is traversed first then its root node and finally the right child.
+Postorder Traversal (left-right-current):  Here, the traversal is left child – right child – root.  It means that the left child has traversed first then the right child and finally its root node
+
+<img src="" alt="loading">
+
+Pre-order Traversal of the above tree: 1-2-4-5-3-6-7 Root-Left-Right
+In-order Traversal of the above tree: 4-2-5-1-6-3-7 Left - Root - Right
+Post-order Traversal of the above tree: 4-5-2-6-7-3-1 Left - Right- Node 
+Level-order Traversal of the above tree: 1-2-3-4-5-6-7 Root -left- right - left -right
