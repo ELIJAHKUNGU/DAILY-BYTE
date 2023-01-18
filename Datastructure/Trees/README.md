@@ -126,7 +126,9 @@ Level-order Traversal of the above tree: 1-2-3-4-5-6-7 Root -left- right - left 
 
 ### Tree Traversal using Breadth-First Search (BFS) algorithm can be further classified into one category:
 Level Order Traversal:It means that the most left child has traversed first and then the other children of the same level from left to right have traversed. 
+
 ```
+
 class Node:
     def __init__(self, key):
         self.left = None
@@ -162,4 +164,6 @@ if __name__ == "__main__":
     None None'''
         
 ```
+<img src="https://github.com/ELIJAHKUNGU/DAILY-BYTE/blob/facebook/Datastructure/Trees/root.png" alt="loading" >
+
 
