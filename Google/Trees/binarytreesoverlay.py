@@ -18,17 +18,37 @@
 #         /  \
 #        7    1
 
+
 class TreeNode:
-    def __init__(self, left=None, right=None, val= 0):
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
         self.left = left
         self.right = right
-        self.val = val
 
-    
-def overlay_method(root:TreeNode) -> TreeNode:
-    if  not root:
+def overlay(a, b):
+    if not a and not b:
         return None
-    root = TreeNode()
+    elif not a:
+        return b
+    elif not b:
+        return a
+    else:
+        a.val += b.val
+        a.left = overlay(a.left, b.left)
+        a.right = overlay(a.right, b.right)
+        return a
+
+
+if __name__ == "__main__":
+    a = TreeNode(1)
+    a.left = TreeNode(2)
+    a.right = TreeNode(3)
+    b = TreeNode(4)
+    b.left = TreeNode(5)
+    b.right = TreeNode(6)
+    result = overlay(a, b)
+
+
 
 
         
