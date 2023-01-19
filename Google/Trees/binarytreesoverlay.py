@@ -26,8 +26,9 @@ class TreeNode:
 
     
 def overlay_method(root:TreeNode) -> TreeNode:
-    if root not None:
+    if  not root:
         return None
-        
+    root = TreeNode()
+
 
         
