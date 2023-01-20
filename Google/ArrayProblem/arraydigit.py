@@ -13,8 +13,11 @@ def integer_digits_arr(nums):
     for num in nums:
         # print(num)
         converting_digit_String = str(num)
+
+        
         if len(converting_digit_String) % 2 == 0 :
             count += 1
+
     return print(count)
 
 # Using the list Compression

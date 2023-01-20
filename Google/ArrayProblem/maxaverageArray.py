@@ -11,9 +11,7 @@
 
 
 def maximum_average (arr, k):
-    count_elements = 0
     max_average = 0 
-    max_sum = 0
     for i in range(len(arr)):
         for j in range(i+1, len(arr)):
             if k == 2 :
@@ -27,6 +25,17 @@ def maximum_average (arr, k):
     return print(round( max_average, 2))
 
     
+def max_k(nums, k):
+    max_average = float('inf')
+    current_sum = sum(nums[:k])
+
+    for i in range(k, len(nums)):
+        # t updates the current_sum by adding the current element and subtracting the first element of the previous subarray.
+        current_sum += nums[i] + nums[i -k]
+        max_average = max(max_average, current_sum/k)
+
+
+
 
 
 if __name__ == "__main__":
