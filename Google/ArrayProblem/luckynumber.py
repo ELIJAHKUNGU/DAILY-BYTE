@@ -17,11 +17,12 @@ def double_numbercheck(nums):
                     count += 1
                     print("NUMS", nums[i], "Compare", nums[j])
                else:
-                current_notrepeated = nums[i]
+                count = 0
+                if count == 0: 
+                    current_notrepeated = nums[i]
     print(current_notrepeated)
 
     
-
 
 if __name__ == "__main__":
     double_numbercheck([1, 3, 1, 2, 2])
