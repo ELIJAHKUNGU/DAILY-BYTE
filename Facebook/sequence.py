@@ -1,4 +1,5 @@
-# "'This question is asked by Facebook. Given an array of unsorted integers, return the length of its longest increasing subsequence.
+# "'This question is asked by Facebook. Given an array of unsorted integers,
+#  return the length of its longest increasing subsequence.
 # Note: You may assume the array will only contain positive numbers.'"
 # nums = [1, 9, 7, 4, 7, 13] return 4
 

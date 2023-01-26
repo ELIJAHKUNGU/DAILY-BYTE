@@ -7,25 +7,33 @@
 
 # nums = [1, 3, 1, 2, 2], return 3.
 
-def double_numbercheck(nums):
-    count = 0
-    current_value = nums[:1]
-   
-    for i in range(len(nums)):
-        for j in range(i+1, len(nums)):
-               if  nums[i] == nums[j]:
-                    count += 1
-                    print("NUMS", nums[i], "Compare", nums[j])
-               else:
-                count = 0
-                if count == 0: 
-                    current_notrepeated = nums[i]
-    print(current_notrepeated)
+# 
+# One way to solve this problem is to use the XOR operator.
+#  The XOR operator returns 1 if the bits being compared are different, and 0
+# if they are the same. If we XOR all the elements in the array together, the 
+# result will be the lucky number, because every other value will be XORed with
+# itself, resulting in 0, and the lucky number will be XORed with 0, resulting in the lucky number.
 
+from collections import Counter
+def double_numbercheck(nums):
+   lucky_no = 0
+   for num in nums:
+    lucky_no ^= num
+   return print(lucky_no)
+        
+   
+# Second method
+def find_luckyNo(nums):
+    count = Counter(nums)
+
+    for key, value in count.items():
+        if value == 1:
+            return print(key)
     
 
 if __name__ == "__main__":
     double_numbercheck([1, 3, 1, 2, 2])
+    find_luckyNo([1, 3, 1, 2, 2])
 
                 
 
