@@ -25,6 +25,8 @@ def double_numbercheck(nums):
 # Second method
 def find_luckyNo(nums):
     count = Counter(nums)
+    # collections.Counter() to count the frequency of each element in the array, and then iterate 
+    # through the counted  elements and return the first element whose frequency is 1.
 
     for key, value in count.items():
         if value == 1:
