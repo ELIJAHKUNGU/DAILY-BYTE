@@ -1,10 +1,10 @@
-// First Order Functions
+//======================== First Order Functions ============================
 const morning_message = (morning_text) =>{
    return ` ${morning_text}`;
 }
 console.log(morning_message('Good morning'))
 
-// High order functions
+//========================= High order functions=============================
 const greetings =(name) => {
     return function greetings_message (message, compliment ){
         console.log(`Hi !! ${message} ${name} ${compliment}` )
@@ -24,3 +24,7 @@ const salamu_Message = (salamuByName, salamumessage, salamu_compliment, name) =>
 
 }
 salamu_Message(salamuByName, 'Good Morning', "Today you look lovely", "KIM")
+
+//============================ Unary functions ======================================
+// =========================== Currying Functions ===================================
+// =========================== Pure Functions =======================================
