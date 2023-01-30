@@ -30,22 +30,34 @@ class TreeNode:
      self.val = val
 
 
-def invertTree(root:TreeNode) ->TreeNode:
-    if not  root:
-        return None  
-    root.left, root.right = root.right , root.left
-    invertTree(root.left)
-    invertTree(root.right)
-
+def invertTree(root):
+    if root:
+        root.left, root.right = root.right, root.left
+        invertTree(root.left)
+        invertTree(root.right)
     return root
+def printTree(root):
+    if root:
+        print(root.val)
+        print(root.left.val)
+        print(root.right.val)
+
+        
+
 
 
 if __name__ == "__main__":
     root = TreeNode(1)
     root.left = TreeNode(2)
     root.right = TreeNode(3)
-    print(invertTree.val)
+    root.left.left = TreeNode(4)
+    root.left.right = TreeNode(4)
 
-    print(invertTree.root.left.val) 
-    print(invertTree.root.right.val)
+    root.right.left = TreeNode(4)
+
+    root.right.right = TreeNode(4)
+
+
+
+    print(invertTree) 
     
