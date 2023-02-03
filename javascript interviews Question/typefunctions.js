@@ -26,5 +26,7 @@ const salamu_Message = (salamuByName, salamumessage, salamu_compliment, name) =>
 salamu_Message(salamuByName, 'Good Morning', "Today you look lovely", "KIM")
 
 //============================ Unary functions ======================================
+const Unaryfunction = (a) => console.log(a + 10)
 // =========================== Currying Functions ===================================
+const CurryingFunction = (a, b, c) => console.log(a)
 // =========================== Pure Functions =======================================
