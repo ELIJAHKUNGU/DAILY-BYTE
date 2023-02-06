@@ -8,7 +8,6 @@
 // num = 16, return 5.
 
 const reduceProblem  = (num) => {
- function numberOfOperations(num) {
   let operations = 0;
   while (num !== 0) {
     if (num % 2 === 0) {
@@ -22,4 +21,3 @@ const reduceProblem  = (num) => {
 }
 
 
-}
