@@ -48,3 +48,19 @@ console.log('impure fun',impurefunction(6)); // returns 1
 console.log(numArr); // returns [6]
 console.log(pureFunction(7)(numArr)); // returns [6, 7]
 console.log(numArr); // returns [6]
+
+
+// ============================================
+// What is IIFE(Immediately Invoked Function Expression)
+// ===========================================
+// IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. 
+// The signature of it would be as below,
+
+(function iifeFunction() {
+    var message = "IIFE";
+  console.log(message);
+    
+}) () ;
+
+// The primary reason to use an IIFE is to obtain data privacy because any variables declared within the IIFE cannot be accessed by the outside world. i.e, If you try to access variables with
+//  IIFE then it throws an error as below,
