@@ -20,15 +20,31 @@
 # It returns the maximum profit after the loop is 
 # finished. This should work for any input array of prices.
 
+# PEAK-VALLEY APPROACH
+# involves identifying the peaks and valleys of stock prices, and buying stocks when they 
+# are at a low (valley)  and selling them when they reach a high (peak).
+
+# The peak valley approach is a simple algorithm for finding the maximum profit.
+# It is used to find the maximum difference between two numbers in a given array.
+# The algorithm loops through the array and keeps track of the minimum price seen so far.
+# It also keeps track of the maximum profit that can be made by selling at the current price.
+# The algorithm returns the maximum profit after the loop is finished.
 def buy_sell_stock(prices):
     
     min_price = float('inf')
     max_profit = 0
    
    
-    for i in prices:
-        min_price = min(min_price , i) 
-        max_profit = max(max_profit , i - min_price)
+    for Current_Price in prices:
+        min_price = min(min_price , Current_Price) 
+    # print("min_price", min_price)
+       
+        max_profit = max(max_profit , Current_Price - min_price)
+        # how is it able to keep track of the index of the min_price and the max_profit?
+        # it is because the min_price and max_profit are not the actual values of the prices
+        # but the difference between the current price and the min_price
+
+
 
     return  print(max_profit)
 
