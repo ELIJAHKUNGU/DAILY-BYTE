@@ -11,7 +11,7 @@
 
 # s = "ABCa", return "abca".
 
-def text_transform(s):
+def text_transform(s) :
     res = ''
     for char in s:
         if ord(char) >= 65 and ord(char) < 90:
