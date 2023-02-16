@@ -1,7 +1,7 @@
 python
 def findMedianSortedArrays(nums1, nums2):
     m, n = len(nums1), len(nums2)
-Here, m and n are the lengths of the two input arrays nums1 and nums2, respectively.
+Here, m and n are the lengths of the two input arrays nums1 and nums2, respectively.....
 
     if m > n:
         nums1, nums2, m, n = nums2, nums1, n, m
